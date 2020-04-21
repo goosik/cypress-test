@@ -1,0 +1,17 @@
+{
+  "gender": "female",
+  "hiringStage": "hired",
+  "name": {
+    "title": "ms",
+    "first": "julia",
+    "last": "cunningham"
+  },
+  "location": {
+    "street": "1544 park road",
+    "city": "sheffield",
+    "state": "gwynedd county",
+    "postcode": "WL10 5US",
+    "coordinates": {
+      "latitude": "-12.0422",
+      "longitude": "157.8099"
+    }}}
