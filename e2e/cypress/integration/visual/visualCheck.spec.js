@@ -3,7 +3,7 @@ describe('Main components', () => {
     cy.visit('/');
   });
 
-  it('Check main components', () => {
+  it('Check main components availability', () => {
     // check filters inputs
     cy.get('#filters input')
       .should('be.visible');
