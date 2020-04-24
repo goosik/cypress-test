@@ -25,6 +25,8 @@ yarn start
 
 ## Test running in docker
 *make sure [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) installed
+
+*no need to run app"s docker or build e2e docker
 ```bash
 cd e2e
 docker-compose up --exit-code-from cypress
