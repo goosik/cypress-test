@@ -11,5 +11,8 @@ services:
     environment:
       - CYPRESS_baseUrl=http://crew-app:5000
     working_dir: /e2e
+    build:
+      context: .
+      dockerfile: ./e2e/cypress/Dockerfile.cypress
     volumes:
       - ./:/e2e

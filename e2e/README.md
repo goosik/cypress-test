@@ -4,7 +4,9 @@ e2e tests for app
 
 ## Installation
 
- [link](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements) to check requirements and install documentation.
+ - clone repo from github
+
+ - [link](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements) to check requirements and install documentation.
 
 ```bash
 yarn add cypress --dev
@@ -13,7 +15,7 @@ yarn add cypress --dev
 ## Test running
 
 ```bash
-yarn run cypress open
+yarn run cypress open --project e2e
 ```
 *start app project firstly
 ```bash
