@@ -13,6 +13,6 @@ services:
     working_dir: /e2e
     build:
       context: .
-      dockerfile: $PWD/Dockerfile.cypress
+      dockerfile: ./Dockerfile.cypress
     volumes:
       - ./:/e2e

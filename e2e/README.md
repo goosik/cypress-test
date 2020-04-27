@@ -1,6 +1,15 @@
 # Cypress framework
 
 e2e tests for app
+## Prerequisites
+git, yarn, [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/)
+
+## Test running in docker
+*no need to run app"s docker or build e2e docker
+```bash
+cd e2e
+docker-compose up --exit-code-from cypress
+```
 
 ## Installation
 
@@ -12,7 +21,14 @@ e2e tests for app
 yarn add cypress --dev
 ```
 
-## Test running
+## Test running locally
+
+change cypress.json file
+```bash
+{
+  "baseUrl": "http://localhost:3000/"
+}
+```
 
 ```bash
 yarn run cypress open --project e2e
@@ -21,15 +37,6 @@ yarn run cypress open --project e2e
 ```bash
 yarn install
 yarn start
-```
-
-## Test running in docker
-*make sure [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) installed
-
-*no need to run app"s docker or build e2e docker
-```bash
-cd e2e
-docker-compose up --exit-code-from cypress
 ```
 
 for CI setting read [docker with CI](https://docs.cypress.io/examples/examples/docker.html#Images) and [CI](https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI)
